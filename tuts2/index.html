@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>File System handling</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <style media="screen">
+      #contact-list{
+        height: 150px;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Enter Names and Email addresses of your contacts</h1>
+      <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" name="Name" value="" id="Name" placeholder="name"
+        class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" name="Email" value="" id="Email" placeholder="Email"
+        class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-primary" id="add-to-list">Add to list!</button>
+      </div>
+
+      <div id="contact-list">
+        <table class="table-striped" id="contact-table">
+          <tr>
+            <th class="col-xs-2">S. No</th>
+            <th class="col-xs-4">Name</th>
+            <th class="col-xs-6">Email</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- <script src="assets/jquery-3.4.0.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script> -->
+    <script src="assets/view.js"></script>
+
+    <!-- Using the OS module to generate information about the system/application -->
+    <script>
+      let os = require('os')
+      document.write('<div class="container">User Info: ' + JSON.stringify(os.userInfo()) + '<br>' +
+        'Platform: ' + os.platform() + '<br>' +
+        'User home directory: ' + os.homedir() + '<br>' +
+        'OS Architecture: ' + os.arch() + '<br></div>'
+      )
+    </script>
+
+  </body>
+</html>

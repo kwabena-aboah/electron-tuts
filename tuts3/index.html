@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Electron server connection</title>
+  </head>
+  <body>
+
+    <script>
+      var net = require('net');
+      var client = net.connect({port:8080}, function(){
+        console.log('Connection established');
+      });
+
+      client.on('data', function(data){
+        document.write(data.toString());
+        client.end();
+      });
+
+      client.on('end', function(){
+        console.log('Disconnected :(');
+      });
+    </script>
+  </body>
+</html>

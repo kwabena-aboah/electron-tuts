@@ -1,0 +1,14 @@
+{
+  "name": "dialog",
+  "version": "1.0.0",
+  "description": "electron dialog-box creation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dialog-box"
+  ],
+  "author": "falconV",
+  "license": "ISC"
+}

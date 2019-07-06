@@ -1,0 +1,16 @@
+{
+  "name": "tuts3",
+  "version": "1.0.0",
+  "description": "Electron app that uses a module to create connections to the server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "connections",
+    "server",
+    "electron"
+  ],
+  "author": "falconV",
+  "license": "ISC"
+}

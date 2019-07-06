@@ -1,0 +1,17 @@
+{
+  "name": "tuts1",
+  "version": "1.0.0",
+  "description": "Electron Tutorials on how to use bootstrapp and jquery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electron",
+    "tutorial",
+    "desktop",
+    "app"
+  ],
+  "author": "falconV",
+  "license": "ISC"
+}

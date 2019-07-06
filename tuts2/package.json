@@ -1,0 +1,15 @@
+{
+  "name": "tuts2",
+  "version": "1.0.0",
+  "description": "File handling as part of desktop application building",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "file_handling",
+    "desktop"
+  ],
+  "author": "falconV",
+  "license": "ISC"
+}
